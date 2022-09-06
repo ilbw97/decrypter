@@ -31,6 +31,7 @@ func Encrypt(inputStr string) (string, error) {
 	return strings.ToUpper(hex.EncodeToString(data)), nil
 }
 
+// test
 // Decrypt decrypt with aes256-cbc
 func Decrypt(inputStr string) (string, error) {
 	input, err := hex.DecodeString(inputStr)
